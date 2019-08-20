@@ -106,7 +106,7 @@ print(Z.strides)
 a = np.array(0.1)
 a.tobytes()
 # indexing always return a view
-# fancy indexing always return a copy
+# Advanced indexing always return a copy. Advanced indexing is triggered when the selection object, obj, is a non-tuple sequence object, an ndarray (of data type integer or bool), or a tuple with at least one sequence object or ndarray (of data type integer or bool).
 
 # Temporary copy
 A = 2 * X + 2 * Y
